@@ -69,7 +69,7 @@
 
     .tag-cmp {
         flex-direction: column;
-        margin-top: 3rem;
+        margin-top: 1rem;
 
         p {
             width: 100%;
@@ -95,81 +95,92 @@
 .app__header-circles {
     flex: 0.75;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     height: 100%;
     margin-left: 1rem;
 
-    div {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
+    .app__header-circle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
 
-        background: var(--white-color);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
 
-        img {
-            width: 60%;
-            height: 60%;
+            background: var(--white-color);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+            img {
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+            }
+
         }
 
-    }
-
-    div:nth-child(1) {
-        width: 100px;
-        height: 100px;
-    }
-
-    div:nth-child(2) {
-        width: 150px;
-        height: 150px;
-        margin: 1.75rem;
-    }
-
-    div:nth-child(3) {
-        width: 100px;
-        height: 100px;
-    }
-
-    div:nth-child(4) {
-        width: 70px;
-        height: 70px;
-        margin-top: 1.5rem;
-        margin-left: 3rem;
-    }
-
-    @media screen and (min-width:2000px) {
         div:nth-child(1) {
-            width: 400px;
-            height: 400px;
+            width: 100px;
+            height: 100px;
         }
 
         div:nth-child(2) {
-            width: 170px;
-            height: 170px;
+            width: 120px;
+            height: 120px;
+            margin: 1.75rem;
         }
 
         div:nth-child(3) {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
         }
 
         div:nth-child(4) {
-            width: 150px;
-            height: 150px;
+            width: 70px;
+            height: 70px;
+            margin-top: 1.5rem;
+            margin-left: 3rem;
+        }
+
+        @media screen and (max-width:1200px) {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 0;
+            margin-top: 20px;
+
+            div:nth-child(1) {
+                width: 50px;
+                height: 50px;
+            }
+
+            div:nth-child(2) {
+                width: 70px;
+                height: 70px;
+            }
+
+            div:nth-child(3) {
+                width: 65px;
+                height: 65px;
+            }
+
+            div:nth-child(4) {
+                width: 60px;
+                height: 60px;
+            }
         }
     }
 
     @media screen and (max-width:1200px) {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
+        // flex-direction: column;
 
-        div {
-            margin: 1rem;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        // height: 100%;
     }
 }
 

@@ -17,6 +17,10 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import MongoDB from '../assets/MongoDB.png';
+import Solidity from '../assets/Solidity.png';
+import hardhat from '../assets/hardhat.png';
+
 
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
@@ -55,6 +59,9 @@ export default {
   sass,
   typescript,
   vue,
+  MongoDB,
+  Solidity,
+  hardhat,
   about01,
   about02,
   about03,
