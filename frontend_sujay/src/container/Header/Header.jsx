@@ -48,6 +48,10 @@ const Header = () => {
             <p className="p-text">Blockchain Developer</p>
           </div>
 
+          <div className="tag-cmp app__flex">
+            <p className="p-text">Open Source Contributor</p>
+          </div>
+
         </div>
       </motion.div>
 
